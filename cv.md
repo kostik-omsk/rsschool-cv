@@ -25,7 +25,6 @@ I am engaged in self-education in the field of Front End. My goal is to achieve 
 - HTML
 - CSS, SCSS
 - JavaScript
-- TypeScript
 - Git/CitHub
 - VUE
 - Bootstrap
