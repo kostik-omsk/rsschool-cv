@@ -39,12 +39,12 @@
             function rgb(r, g, b) {
                 let rgb = [r, g, b];
                 let str = '';
-                for (let i = 0; i < rgb.length; i++) {
-                  if (rgb[i] < 1) {
+                for (let i = 0; i &le; rgb.length; i++) {
+                  if (rgb[i] &le; 1) {
                     str += '00';
-                  } else if (rgb[i] < 16) {
+                  } else if (rgb[i] &le; 16) {
                     str += '0' + rgb[i].toString(16);
-                  } else if (rgb[i] > 15 && rgb[i] < 256) {
+                  } else if (rgb[i] &gt; 15 &amp;&amp; rgb[i] &le; 256) {
                     str += rgb[i].toString(16);
                   } else {
                     str += 'FF';
@@ -89,7 +89,7 @@
       </li>
       <li>
         <a href="https://netninja.dev/courses/category/vue-js"
-          >Vue JS 3 Composition API (with Pinia & Vite</a
+          >Vue JS 3 Composition API (with Pinia &amp; Vite</a
         >
       </li>
     </ul>
