@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>CV</title>
   </head>
   <body>
-    <h1>Konstantin Sidorenko</h1>
-    <h2>Contact Information:</h2>
-    <ul>
-      <li>Phone: +7 913 671 80 01</li>
-      <li>E-mail: sidorenko.kostantin@yandex.ru</li>
-      <li>Discort: Konstantin S(@kostik-omsk)</li>
-    </ul>
-    <h2>About me</h2>
-    <p>
-      I am engaged in self-education in the field of Front End. My goal is to
-      achieve a high level of competence in IT. Before that, my job was related
-      to the installation of engineering communications. I am able to understand
-      new material and documentation on my own. I quickly master new
-      technologies and apply them in my work.
-    </p>
-    <h2>Skill</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS, SCSS</li>
-      <li>JavaScript</li>
-      <li>Git/CitHub</li>
-      <li>VUE</li>
-      <li>Bootstrap</li>
-      <li>Gsap</li>
-    </ul>
-    <h2>Code examples</h2>
-    <p>RGB To Hex Conversion</p>
-    <pre>
-        <code>
-            function rgb(r, g, b) {
-                let rgb = [r, g, b];
-                let str = '';
-                for (let i = 0; i &le; rgb.length; i++) {
-                  if (rgb[i] &le; 1) {
-                    str += '00';
-                  } else if (rgb[i] &le; 16) {
-                    str += '0' + rgb[i].toString(16);
-                  } else if (rgb[i] &gt; 15 &amp;&amp; rgb[i] &le; 256) {
-                    str += rgb[i].toString(16);
-                  } else {
-                    str += 'FF';
+    <header>
+      <nav>
+        
+      </nav>
+    </header>
+    <main>
+      <h1>Konstantin Sidorenko</h1>
+      <h2>Contact Information:</h2>
+      <ul>
+        <li>Phone: +7 913 671 80 01</li>
+        <li>E-mail: sidorenko.kostantin@yandex.ru</li>
+        <li>Discort: Konstantin S(@kostik-omsk)</li>
+      </ul>
+      <h2>About me</h2>
+      <p>
+        I am engaged in self-education in the field of Front End. My goal is to
+        achieve a high level of competence in IT. Before that, my job was related
+        to the installation of engineering communications. I am able to understand
+        new material and documentation on my own. I quickly master new
+        technologies and apply them in my work.
+      </p>
+      <h2>Skill</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS, SCSS</li>
+        <li>JavaScript</li>
+        <li>Git/CitHub</li>
+        <li>VUE</li>
+        <li>Bootstrap</li>
+        <li>Gsap</li>
+      </ul>
+      <h2>Code examples</h2>
+      <p>RGB To Hex Conversion</p>
+      <pre>
+          <code>
+              function rgb(r, g, b) {
+                  let rgb = [r, g, b];
+                  let str = '';
+                  for (let i = 0; i &le; rgb.length; i++) {
+                    if (rgb[i] &le; 1) {
+                      str += '00';
+                    } else if (rgb[i] &le; 16) {
+                      str += '0' + rgb[i].toString(16);
+                    } else if (rgb[i] &gt; 15 &amp;&amp; rgb[i] &le; 256) {
+                      str += rgb[i].toString(16);
+                    } else {
+                      str += 'FF';
+                    }
                   }
+                  return str.toUpperCase();
                 }
-                return str.toUpperCase();
-              }
-              rgb(255, 255, 255); // returns FFFFFF
-        </code>
-    </pre>
-    <h2>Experience</h2>
-    <p>
-      <a href="http://almanah-nsk.ru/">almanah-nsk.ru</a> - My first project
-      (HTML, CSS, JavaScript, plugin fullpage.js) [<a
-        href="https://github.com/kostik-omsk/newalmanah"
-        >code GitHub</a
-      >]
-    </p>
-    <p>
-      <a href="https://music-45c44.firebaseapp.com/">Playlist</a> - educational
-      project from The Net Ninja by VUE (VUE, SCSS, firebase) [<a
-        href="https://github.com/kostik-omsk/myplaylist)"
-        >code GitHub</a>]
-    </p>
-    <h2>Education</h2>
-    <p>
-      University: Omsk State Technical University (OmSTU), Economics, service
-      and management faculty.
-    </p>
-    <p>Courses:</p>
-    <ul>
-      <li>
-        <a href="https://learn.javascript.ru/courses/jsbasic"
-          >learn.javascript.ru</a
-        >
-      </li>
-      <li>
-        <a href="https://itgid.info/ru/course/js20"
-          >Alexander Lushchenko JavaScript v.2.0</a
-        >
-      </li>
-      <li>
-        <a href="https://netninja.dev/courses/category/vue-js"
-          >Vue JS 3 Composition API (with Pinia &amp; Vite</a
-        >
-      </li>
-    </ul>
-    <h2>English</h2>
+                rgb(255, 255, 255); // returns FFFFFF
+          </code>
+      </pre>
+      <h2>Experience</h2>
+      <p>
+        <a href="http://almanah-nsk.ru/">almanah-nsk.ru</a> - My first project
+        (HTML, CSS, JavaScript, plugin fullpage.js) [<a
+          href="https://github.com/kostik-omsk/newalmanah"
+          >code GitHub</a
+        >]
+      </p>
+      <p>
+        <a href="https://music-45c44.firebaseapp.com/">Playlist</a> - educational
+        project from The Net Ninja by VUE (VUE, SCSS, firebase) [<a
+          href="https://github.com/kostik-omsk/myplaylist)"
+          >code GitHub</a>]
+      </p>
+      <h2>Education</h2>
+      <p>
+        University: Omsk State Technical University (OmSTU), Economics, service
+        and management faculty.
+      </p>
+      <p>Courses:</p>
+      <ul>
+        <li>
+          <a href="https://learn.javascript.ru/courses/jsbasic"
+            >learn.javascript.ru</a
+          >
+        </li>
+        <li>
+          <a href="https://itgid.info/ru/course/js20"
+            >Alexander Lushchenko JavaScript v.2.0</a
+          >
+        </li>
+        <li>
+          <a href="https://netninja.dev/courses/category/vue-js"
+            >Vue JS 3 Composition API (with Pinia &amp; Vite</a
+          >
+        </li>
+      </ul>
+      <h2>English</h2>
 
-    <p>Language Proficiency - A1(entry level)</p>
-    <p>Russian - Native</p>
+      <p>Language Proficiency - A1(entry level)</p>
+      <p>Russian - Native</p>
+    </main>
+    <footer></footer>
   </body>
 </html>
