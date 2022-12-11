@@ -13,132 +13,200 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
             <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
             <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
             <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
             <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
           </ul>
         </nav>
         <section class="header-profile">    
           <img class="header-avatar" src="./assets/img/avatar.jpg" alt="avatar" >     
           <div class="header-name">
-            <h1 class="header-title">Konstantin Sidorenko</h1>
+            <h1 class="header-title"><span class="blue">Konstantin</span> Sidorenko</h1>
             <p class="header-subtitle">Junior Front-end Developer</p>
           </div>
+        </section>
+        <section class="heder-contacts">
+          <ul class="contacts-list">
+            <li class="list-item">
+              <h4>Location</h4>
+              <address>Omsk, Russia</address>
+            </li>
+            <li class="list-item">
+              <h4>Phone</h4>
+              <a href="tel:+79136718001">
+                <p>+7 913 671 80 01</p>
+              </a>
+            </li>
+            <li class="list-item">
+              <h4>Discort</h4>
+              <p>Konstantin S(@kostik-omsk)</p>
+            </li>
+            <li class="list-item">
+              <h4>E-mail</h4>
+              <a href="mailto:sidorenko.kostantin@yandex.ru">
+                <p>sidorenko.kostantin@yandex.ru</p>
+              </a>
+            </li>
+          </ul>
         </section>
       </div>
     </header>
     <main class="main">
       <div class="container main-container">
-        <div class="left-container">
-          <section class="section section-contacts" id="contacts">
-            <h2 class="section-title">Contact</h2>
-            <ul class="section-list">
-              <li>Phone: +7 913 671 80 01</li>
-              <li>E-mail: sidorenko.kostantin@yandex.ru</li>
-              <li>Discort: Konstantin S(@kostik-omsk)</li>
-            </ul>
-          </section>
-          <section class="section section-skills" id="skills">
-            <h2 class="section-title">Skill</h2>
-            <ul>
-              <li>HTML</li>
-              <li>CSS, SCSS</li>
-              <li>JavaScript</li>
-              <li>Git/CitHub</li>
-              <li>VUE</li>
-              <li>Bootstrap</li>
-              <li>Gsap</li>
-            </ul>
-          </section>
-          <section class="section section-education" id="education">
-            <h2 class="section-title">Education</h2>
-            <p>
-              University: Omsk State Technical University (OmSTU), Economics, service
-              and management faculty.
-            </p>
-          </section>
-          <section class="section section-courses" id="courses">
-            <h2 class="section-title">Courses:</h2>
-            <ul>
-              <li>
-                <a href="https://learn.javascript.ru/courses/jsbasic"
-                  >learn.javascript.ru</a
-                >
-              </li>
-              <li>
-                <a href="https://itgid.info/ru/course/js20"
-                  >Alexander Lushchenko JavaScript v.2.0</a
-                >
-              </li>
-              <li>
-                <a href="https://netninja.dev/courses/category/vue-js"
-                  >Vue JS 3 Composition API (with Pinia &amp; Vite</a
-                >
-              </li>
-            </ul>
-          </section>
-          <section class="section languages" id="languages">
-            <h2 class="section-title">English</h2>
-            <p>Language Proficiency - A1(entry level)</p>
-            <p>Russian - Native</p>
-          </section>
-        </div>
-        <div class="right-container">
-          <section class="section section-summary" id="summary">
-            <h2>About me</h2>
-            <p>
-              I am engaged in self-education in the field of Front End. My goal is to
-              achieve a high level of competence in IT. Before that, my job was related
-              to the installation of engineering communications. I am able to understand
-              new material and documentation on my own. I quickly master new
-              technologies and apply them in my work.
-            </p>
-          </section>
-          <section class="section section-code" id="code">
-            <h2>Code examples</h2>
-            <p>RGB To Hex Conversion</p>
-            <!-- <pre>
+        <section class="section section-summary" id="summary">
+          <h2 class="section-title">About <span class="blue">me</span></h2>
+          <h4 class="section-subtitle">A few words</h4>
+          <p>
+            I am engaged in self-education in the field of Front End. My goal is to
+            achieve a high level of competence in IT. Before that, my job was related
+            to the installation of engineering communications. I am able to understand
+            new material and documentation on my own. I quickly master new
+            technologies and apply them in my work.
+          </p>
+        </section>
+        <section class="section section-skills" id="skills">
+          <h2 class="section-title"><span class="blue">My</span> Skill</h2>
+          <h4 class="section-subtitle">Сontinue to improve</h4>
+          <ul class="section-list skill-box">
+            <li class="list-item">
+              <h4>HTML &asymp; 80%</h4>
+              <div class="progress">
+                <div class="percent percent-html"></div>
+              </div>
+            </li>
+            <li class="list-item">
+              <h4>CSS, SCSS &asymp; 70%</h4>
+              <div class="progress">
+                <div class="percent percent-css"></div>
+              </div>
+            </li>
+            <li class="list-item">
+              <h4>JavaScript &asymp; 70%</h4>
+              <div class="progress">
+                <div class="percent percent-js"></div>
+              </div>
+            </li>
+            <li class="list-item">
+              <h4>Git/CitHub &asymp; 65%</h4>
+              <div class="progress">
+                <div class="percent percent-git"></div>
+              </div>
+            </li>
+            <li class="list-item">
+              <h4>VUE &asymp; 60%</h4>
+              <div class="progress">
+                <div class="percent percent-vue"></div>
+              </div>
+            </li>
+            <li class="list-item">
+              <h4>Bootstrap &asymp; 50%</h4>
+              <div class="progress">
+                <div class="percent percent-bootstrap"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="section section-education" id="education">
+          <h2 class="section-title">Education</h2>
+          <h4 class="section-subtitle">My road</h4>
+          <div class="education">
+            <article class="education-university">
+              <h4>University:</h4>
+              <a href="https://omgtu.ru/">
+                <p>Omsk State Technical University (OmSTU)</p>
+              </a>
+              <h4>Faculty</h4>
+              <p>Economics,service and management faculty</p>
+            </article>
+            <article class="education-courses">
+              <h4>Courses:</h4>
+              <ul class="section-list">
+                <li>
+                  <a href="https://learn.javascript.ru/courses/jsbasic">learn.javascript.ru</a>
+                </li>
+                <li>
+                  <a href="https://itgid.info/ru/course/html">HTML for JavaScript developers</a>
+                </li>
+                <li>
+                  <a href="https://itgid.info/ru/course/js20">JavaScript v.2.0</a>
+                </li>
+                <li>
+                  <a href="https://itgid.info/ru/course/function-2021">Functions in JavaScript</a>
+                </li>
+                <li>
+                  <a href="https://netninja.dev/courses/category/vue-js">Vue JS 3 Composition API (with Pinia &amp; Vite)</a>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <section class="section section-code" id="code">
+          <h2 class="section-title">Code <span class="blue">examples </span></h2>
+          <h4 class="section-subtitle">RGB To Hex Conversion</h4>
+          <div class="code">           
+            <pre>
               <code>
-                  function rgb(r, g, b) {
-                      let rgb = [r, g, b];
-                      let str = '';
-                      for (let i = 0; i &le; rgb.length; i++) {
-                        if (rgb[i] &le; 1) {
-                          str += '00';
-                        } else if (rgb[i] &le; 16) {
-                          str += '0' + rgb[i].toString(16);
-                        } else if (rgb[i] &gt; 15 &amp;&amp; rgb[i] &le; 256) {
-                          str += rgb[i].toString(16);
-                        } else {
-                          str += 'FF';
-                        }
-                      }
-                      return str.toUpperCase();
+                function rgb(r, g, b) {
+                  let rgb = [r, g, b];
+                  let str = '';
+                  for (let i = 0; i &le; rgb.length; i++) {
+                    if (rgb[i] &le; 1) {
+                      str += '00';
+                    } else if (rgb[i] &le; 16) {
+                      str += '0' + rgb[i].toString(16);
+                    } else if (rgb[i] &gt; 15 &amp;&amp; rgb[i] &le; 256) {
+                      str += rgb[i].toString(16);
+                    } else {
+                      str += 'FF';
                     }
-                    rgb(255, 255, 255); // returns FFFFFF
-              </code>
-            </pre> -->
-          </section>
-          <section class="section section-projects" id="projects">
-            <h2>Projects</h2>
-            <p>
-              <a href="http://almanah-nsk.ru/">almanah-nsk.ru</a> - My first project
-              (HTML, CSS, JavaScript, plugin fullpage.js) [<a
-                href="https://github.com/kostik-omsk/newalmanah"
-                >code GitHub</a
-              >]
-            </p>
-            <p>
-              <a href="https://music-45c44.firebaseapp.com/">Playlist</a> - educational
-              project from The Net Ninja by VUE (VUE, SCSS, firebase) [<a
-                href="https://github.com/kostik-omsk/myplaylist)"
-                >code GitHub</a>]
-            </p>
-          </section>
-        </div>
+                  }
+                  return str.toUpperCase();
+                }
+                rgb(255, 255, 255); // returns FFFFFF
+              </code>  
+            </pre>      
+          </div>
+        </section>
+        <section class="section section-projects" id="projects">
+          <h2 class="section-title"><span class="blue">My</span> Projects</h2>
+          <h4 class="section-subtitle">something</h4>
+          <div class="projects-box">
+            <div class="project-card">
+              <a href="http://almanah-nsk.ru/" target="_blank">
+                <figure>
+                  <img class="project-img" src="./assets/img/almanah.jpg" alt="screen">
+                </figure>
+                <h3>My first project </h3>
+                <div class="projects-technologies">
+                  <h4>technologies</h4>
+                  <img src="./assets/svg/html.svg" alt="html">
+                  <img src="./assets/svg/css.svg" alt="css">
+                  <img src="./assets/svg/javascript.svg" alt="js">
+                </div>
+              </a>
+            </div>
+            <div class="project-card">
+              <a href="https://music-45c44.firebaseapp.com/">
+                <img class="project-img" src="./assets/img/vue.jpg" alt="screen">
+                <h3>project VUE</h3>
+                <div class="projects-technologies">
+                  <h4>technologies</h4>
+                  <img src="./assets/svg/sass.svg" alt="html">
+                  <img src="./assets/svg/css.svg" alt="css">
+                  <img src="./assets/svg/javascript.svg" alt="js">
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="section languages" id="languages">
+          <h2 class="section-title">Language <span class="blue">Proficiency</span></h2>
+          <h4 class="section-subtitle">Still will</h4>
+          <p>English - A1(google translate)</p>
+          <p>Russian - Native</p>
+        </section>
       </div>
     </main>
     <footer class="footer">
@@ -150,7 +218,6 @@
         <a href="https://github.com/kostik-omsk">
           <img src="./assets/svg/iconmonstr-github-1.svg" alt="github" width="100">
         </a>
-        
       </div>
     </footer>
   </body>
