@@ -36,12 +36,10 @@ html {
 }
 
 body {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  /* Типографика */
   font-family: Raleway-Medium, sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -56,11 +54,9 @@ a {
 a:hover {
   color: red;
 }
-
 .blue {
   color: var(--my-blue);
 }
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -95,7 +91,7 @@ a:hover {
   margin-bottom: 30px;
 }
 
-/* navbar */
+/* NAVBAR */
 .nav-list {
   display: flex;
   justify-content: flex-end;
@@ -103,12 +99,10 @@ a:hover {
   min-height: 50px;
   list-style: none;
 }
-
 .nav-item .nav-link:hover {
   background: var(--my-blue);
   color: white;
 }
-
 .nav-link {
   display: block;
   position: relative;
@@ -119,6 +113,11 @@ a:hover {
   letter-spacing: 1px;
   color: var(--color-text);
 }
+@media (max-width: 740px) {
+  .nav-list {
+    flex-wrap: wrap;
+  }
+}
 
 /* header-profile avatar name */
 .header-profile {
@@ -127,29 +126,24 @@ a:hover {
   width: 100%;
   padding: 50px 30px 35px;
 }
-
 .header-avatar {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   box-shadow: 0px 0px 5px 3px var(--my-grey);
 }
-
 .header-name {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-
 .header-title {
   font-size: 3.5em;
 }
-
 .header-subtitle {
   font-size: 2em;
 }
-
 @media (max-width: 767px) {
   .header-profile {
     flex-direction: column;
@@ -158,7 +152,6 @@ a:hover {
   .header-title {
     font-size: 2.5em;
   }
-
   .header-subtitle {
     font-size: 1.5em;
   }
@@ -169,7 +162,6 @@ a:hover {
   padding: 0 20px;
   background: var(--my-grey);
 }
-
 .contacts-list {
   display: flex;
   align-items: center;
@@ -177,35 +169,34 @@ a:hover {
   list-style: none;
   color: white;
 }
-
 @media (max-width: 896px) {
   .contacts-list {
     flex-direction: column;
     align-items: flex-start;
   }
 }
-
 .list-item {
   display: block;
   padding: 10px 0;
 }
-
 address {
   font-style: normal;
 }
-
+/* SUMMARRY */
+.section-summary p {
+  text-indent: 20px;
+}
 /* MAIN  */
 .main-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
+/* MY SKILL */
 .skill-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 .progress {
   width: 90%;
   height: 8px;
@@ -234,20 +225,43 @@ address {
   width: 50%;
 }
 
+/* EDUCATION */
 .education {
   display: flex;
+  flex-wrap: wrap;
 }
-
 .education-university,
 .education-courses {
-  width: 50%;
+  width: 49%;
+  padding: 0 5px;
+}
+@media (max-width: 760px) {
+  .education {
+    flex-direction: column;
+  }
+  .education-university,
+  .education-courses {
+    width: 100%;
+  }
 }
 
+/* CODE EXAMPLES */
 .code {
+  max-width: 100%;
+  padding: 1rem;
   background: var(--my-grey);
   color: white;
 }
+.code pre {
+  margin-left: -130px;
+}
+@media (max-width: 760px) {
+  .code pre {
+    overflow-x: scroll;
+  }
+}
 
+/* PROJECTS */
 .projects-box {
   display: flex;
   justify-content: space-around;
@@ -255,11 +269,28 @@ address {
 }
 .project-card {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   width: 49%;
+  margin-bottom: 20px;
   padding: 5px;
   background: var(--my-grey);
   color: white;
+}
+.project-card:hover {
+  box-shadow: 0 0 7px red;
+}
+@media (max-width: 768px) {
+  .projects-box {
+    flex-direction: column;
+  }
+  .project-card {
+    width: 100%;
+  }
+}
+.project-link {
+  width: 100%;
 }
 .project-img {
   width: 100%;
@@ -267,7 +298,25 @@ address {
 .projects-technologies img {
   width: 40px;
 }
-
-.footer {
+.button {
+  display: inline-block;
+  width: 150px;
+  height: 45px;
+  padding: 10px 14px;
+  border: none;
+  text-align: center;
+  color: var(--color-text);
+  background: #ffffff;
+  cursor: pointer;
+}
+/* FOOTER */
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
   background: url(./assets/img/bg-fon.jpg) center center/cover no-repeat;
+}
+.footer-github {
+  text-align: center;
 }
